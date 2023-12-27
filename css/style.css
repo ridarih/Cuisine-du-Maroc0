@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Tangerine:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+ 
+}
+header * {
+    z-index: 10;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.navbarre {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    /*  background-color: black; */
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.logo:hover {
+    color: orange ;
+}
+
+.navbarre ul {
+    display: inline-flex;
+}
+
+.navbarre ul li {
+    padding: 18px 10px;
+    list-style: none;
+}
+
+.navbarre ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbarre ul li a:hover {
+    border-bottom: 2px solid orange;
+}
+
+header .content {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+
+}
+
+header .content span {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 2px;
+
+}
+
+header .content span h2 {
+    display: inline;
+    color: orange;
+}
+header .content button {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 36px;
+    border: 2px solid white;
+    border-radius: 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+header .content button:hover {
+    background-color: orange;
+}
+/* la section du cartes */
+.titleS1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 75px;;
+    cursor: pointer;
+    width: 100%;
+    font-family:"Tangerine";
+    font-weight: 700;
+    color: orange;
+    text-shadow: 6px 5px 5px #00000063;
+    /* border: 1px solid black;
+    background-color: orange;
+    color: white; */
+
+}
+
+
+#laCarte .content {
+    display: flex;
+    height: 75vh;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+ ;
+   
+}
+#laCarte .content img{
+    width: auto;
+    height: 450px;
+    cursor: pointer;
+}
+#laCarte .content img:hover{
+    height: 550px;
+    padding-bottom: 90px;
+}
+
+/* la section du Qui sommes nous */
+#quiSommesNous, #laCarte{
+    background-color: #f9f8f7;
+    padding: 20px 0px;
+}
+#quiSommesNous .content {
+    display: flex;
+    justify-content:center ;
+    align-content: space-between;
+    padding : 30px ;
+
+height: 80%;}
+#quiSommesNous .content article {
+
+ text-align: center;
+ padding: 0 67px;
+ margin-top: 10px;
+
+
+}
+fieldset {
+    padding: 20px;
+    border-radius: 15px;
+    border: 6px double black;
+}
+legend{
+    font-weight: bold;
+    font-size: 20px;
+}
+#quiSommesNous .content div img {
+    width: auto;
+    height: 385px; 
+    border-radius: 20px;
+}
